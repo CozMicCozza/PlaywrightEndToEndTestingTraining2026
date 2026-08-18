@@ -5,6 +5,8 @@
 /*
 Multiple comment
 
+JS is case sensitive
+
 Print any statement in JS
 -------------------------
 console.log("message");
