@@ -1,0 +1,12 @@
+{
+  "name": "jsforautomation",
+  "version": "1.0.0",
+  "description": "Training exercises for automation",
+  "license": "ISC",
+  "author": "Corry Littlefair",
+  "type": "module" ,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
