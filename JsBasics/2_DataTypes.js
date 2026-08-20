@@ -170,7 +170,55 @@ let person = {
 console.log(person);//Object
 console.log(typeof person);//Object
 
-//symbol: used to define unuque properties of an Object (Not for Automation)
+/*symbol: used to define unuque properties of an Object (Not for Automation)
+ symbol type is used to declare unique identifier (variable)
+*/
+
+console.log("----------Symbol-----------");
+
+let profile1 = Symbol("QA");
+console.log(profile1);//Symbol(QA)
+console.log(typeof profile1);//symbol
+
+let profile2 = Symbol("QA");
+console.log(profile2);//Symbol(QA)
+console.log(typeof profile2);//symbol
+
+// Strict Equality '==='
+console.log(profile1 === profile2);
+
+console.log("---------------------");
+
+//Object literal
+
+let product = {
+  name:"iPhone",
+  price:1500
+};
+
+//access properties from object
+//1. Dot Notations
+//2. btacket notation
+
+console.log(product.name);
+console.log(product["price"]);
+
+product.price=1800;
+console.log(product);
+
+//unique property added to object -> Symbol
+let id=Symbol('pid');
+product[id]=1010;
+console.log(product);
+
+// to update symbol type data
+product.pid=2020;//Adds new
+product[id]=3030;//updates defined symbol
+console.log(product);
+
+
+
+
 
 
 

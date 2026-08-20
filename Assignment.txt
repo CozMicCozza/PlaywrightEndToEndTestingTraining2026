@@ -1,0 +1,244 @@
+Assignment on DataTypes,Variable and Operators
+1. Identify the Data Type 
+Write a program to declare the following variables and log 
+their data types: 
+let a = "Hello"; 
+let b = 100; 
+let c = true; 
+let d = null; 
+let e = undefined; 
+let f = { name: "John" }; 
+let g = [1, 2, 3]; 
+let h = function() { 
+}; 
+
+2. Variable Scope Check 
+What will be the output of the following? 
+var x = 10; 
+function test() { 
+var x = 20; 
+console.log(x); 
+} 
+test(); 
+console.log(x); 
+
+3. Hoisting Example 
+Predict the output and explain: 
+console.log(a); 
+var a = 5; 
+
+4. Let vs Var 
+What will be the output? 
+function testScope() { 
+if (true) { 
+var a = 10; 
+let b = 20; 
+} 
+console.log(a); // ? 
+console.log(b); // ? 
+} 
+testScope(); 
+
+5. Const Behavior 
+What will happen? 
+const obj = { name: "Alice" }; 
+obj.name = "Bob"; 
+console.log(obj.name); 
+obj = { name: "Charlie" }; // What happens here? 
+
+6. What’s the type of typeof null? 
+console.log(typeof null); // ? 
+
+7.Guess the output?
+---------------------
+1.console.log(1 + "2" + 3);
+2.console.log(1 + 2 + "3");
+3.console.log("5" * true);
+4.console.log(10 > 5 > 1);
+5.let a = 2;
+    let b = a++ + ++a;
+    console.log(a, b);
+6.let a = 3;
+console.log(a++ + a++ + ++a);
+7.console.log(5 * 2 == "10");
+8.
+let x = 1;
+let y = ++x + x++ + x;
+console.log(x, y);
+9.console.log(10 > 5 && 20 < 30);
+10.console.log(null || undefined || "Playwright");
+
+---------------------------------------------------------------------
+Prepare Theory based questions
+Q1. What is JavaScript? Is it a compiled language or an interpreted language?
+Q2. Name at least three places where JavaScript can run.
+Q3. What is Node.js? Why do we need it if we already have browsers?
+Q4. What is the V8 engine? Which browser uses it?
+Q5. Name the JavaScript engines used by Chrome, Firefox, and Safari.
+Q6. What is the difference between a browser engine and a JavaScript engine?
+Q7. How do you check if Node.js is installed on your machine? Write the command.
+Q8. What is VS Code? Name two extensions that are useful for writing JavaScript.
+Q9. Write a simple program that prints 'Hello, JavaScript!' using console.log and run it using Node.js.
+Q10. Can JavaScript run without a browser? Explain how
+Q11. What are the three ways to declare a variable in JavaScript?
+Q12. What is the difference between let and const?
+Q13. Can you reassign a value to a const variable? What happens if you try?
+Q14. What is hoisting? Give a simple example using var.
+Q15. What happens if you try to use a let variable before declaring it?
+Q16. List all the primitive data types in JavaScript.
+Q17. What is the difference between null and undefined?
+Q18. What does typeof return for: 42, 'hello', true, null, undefined?
+Q19. Write a small code to declare one variable with var, one with let, and one with const. Print all
+three
+
+ControlFlowStatements 
+------------------------
+Assignment1: 
+Problem: 
+Write a JavaScript program to check whether a number is even or odd. 
+
+Assignment2: 
+Problem: 
+Print the day of the week based on number (1–7). 
+What you will use here? If-else or switch case? 
+
+Assignment 3: 
+Problem: Write .js script that evaluates a test case result based on HTTP 
+response status code the program should use Nester if..else statements to 
+determine result message.  
+Instructions:  
+1.create a new file named testResult.js Inside the file declare variable to store 
+status code Let responseCode=200;  
+2.use if else Nested statements to evaluate response code and print status 
+message  
+3.Use the following logic for result evaluation: I 
+f response Code is 100-199→print: Informational  
+If response Code is 200-299→print: successful  
+If response Code is 300-399→print: Redirectional  
+If response Code is 400-499 →print: Client Error 
+If response Code is 500-599→print: Server Error For any other code →print 
+Unkown Status code  
+4.Run script using node testResult.js  
+
+
+Assignment 4
+Problem:  Write a script that suggests what clothing to wear based on the 
+current temperature The program should use if...else or if...else if statements to 
+determine the suggestion.  
+Instructions: 1. Create a new file named weather.js. Inside the file, declare a 
+variable to store the temperature,  
+for example: let temperature = 28;  
+2. Use if...else or if...else if statements to decide and print the clothing 
+suggestion based on the temperature 
+3. Use the following logic for clothing suggestion:  
+If temperature is above 35°C Print: wear light cotton clothes  
+◦ If temperature is between 20°C and 35°C Pint: Normal casual wear  
+○ If temperature is between 10°C and 19°C Print: Wear a jacket  
+○ If temperature is below 10°C Print: stay indoors, it's too cold! Run the script 
+using: node weather.js  
+Test Cases to Try: • temperature = 40 • temperature = 28 . temperature- 15 
+
+
+Assignment 5:  
+Problem: Create a Javascript that checks whether the given username and 
+password match the predefined login credentials using simple variables 
+Instructions:  
+1. Greate a new file named login.js.  
+2. Inside the file, do the following:
+Declare two variables for user input: let 
+enteredUsername = "Priyanka"; // Keep changing  
+let enteredPassword = "Nigade":;//Keep changing (Change "some _ value" to 
+simulate different test cases.)  
+Declare two predefined credentials:  
+const correctusername = "admin@emalil.com",  
+const correctPassword = "admin@123";  
+3. Use an if...else statement to compare: If both enteredusername and 
+enteredPassword match the correct credentials, print: Login Successful 
+Otherwise, print: Invalid credentials Run the script using: node login.js
+
+=============================
+loop + Array
+=====================
+Assignment1: 
+Problem: 
+Print all even numbers between 1 and 50. 
+
+Assignment2: 
+Problem: 
+Reverse a number using a loop. 
+Input:1234 
+Output:4321 
+
+Assignment3: 
+Problem: 
+Check whether a number 7 is prime or not. 
+
+Assignment 4:
+Problem:
+Check 121 is Palindrome Number 
+
+Assignment 5:
+Problem:
+Count number of Digits
+Input: 12345
+Output: 5
+
+Assignment 6: 
+Problem:
+Find the largest digit
+Input:58329
+Output:9
+
+scenario based questions on Array
+-----------------------------------------
+1. Employee Management System 
+Scenario: 
+A company stores employee names in an array. 
+Question: 
+Declare an array with employee names "Rahul", "Priya", "Amit" and 
+perform the following operations: 
+1. Add "Sneha" to the employee list  
+2. Remove the last employee from the list  
+3. Add "Manager" at the beginning of the list  
+4. Remove the first employee from the list  
+
+
+2. Shopping Cart Application 
+Scenario: 
+An e-commerce website manages products in a shopping cart. 
+Question: 
+Declare an array with "Mobile", "Laptop", "Mouse" and: 
+1. Add "Keyboard" to the cart  
+2. Display all products in reverse order  
+3. Convert all cart items into a single string separated by " | " 
+
+
+3. Browser Tabs Automation 
+Scenario: 
+A browser automation framework tracks currently opened tabs. 
+Question: 
+Declare an array with "Google", "YouTube", "ChatGPT" and: 
+1. Close the last opened tab  
+2. Add "GitHub" as the first tab  
+3. Display tabs in reverse order  
+
+
+
+4. Food Delivery Orders 
+Scenario: 
+A food delivery application maintains current orders. 
+Question: 
+Declare an array with "Pizza", "Burger", "Pasta" and: 
+1. Add "Sandwich" to the orders  
+2. Remove the first order  
+3. Display all orders as a comma-separated string  
+
+
+5. Student Attendance System 
+Scenario: 
+A school application maintains student attendance. 
+Question: 
+Declare an array with "Ankit", "Riya", "Karan" and: 
+1. Add "Neha" at the beginning  
+2. Remove the last student from the list  
+3. Create a separate copy of the attendance list 
