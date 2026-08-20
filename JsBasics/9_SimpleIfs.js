@@ -14,9 +14,9 @@ equality
 
 console.log("program started.....");
 
-let Year=2026;
+let year=2026;
 
-if(Year===2026)
+if(year===2026)
 {
 console.log("Year matched....: "+year);
 
