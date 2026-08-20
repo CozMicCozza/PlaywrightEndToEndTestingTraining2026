@@ -28,38 +28,32 @@ console.log("program ends.....");
 /*
 Automation testing
 --------------
-1.url match
-2.test url protocol
-3.test url should not be null
-
+url address should have protocal(http/https)
 */
 
 console.log("-------------");
-let actUrl="https://www.amazon.in";
-let expUrl="https://www.amazon.in";
+let baseUrl="https://www.google.com";
 
-if(actUrl===expUrl)
+if(baseUrl.includes("https"))
 {
-    console.log("Url is matched");
+    console.log("Url is is as per standard");
     
 }
 
 console.log("-------------");
 
-
-//check for url with protocol:https
 //partail data(string)validate includes()
-
-if(actUrl.includes("https"))
+let expUrl="https://www.google.com"
+let actUrl="https://www.google.com";
+if(actUrl === expUrl)
 {
-console.log("Current url is valid!");
-
+console.log("URL's are the same!");
 }
 
 console.log("-------------");
 //url should not be null
 
-if(actUrl != null)
+if(actUrl !== null)
 {
 console.log("Url is not null");
 
