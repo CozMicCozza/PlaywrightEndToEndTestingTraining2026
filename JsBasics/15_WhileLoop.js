@@ -80,6 +80,27 @@ while(number1>0)
 console.log("Reverse number is: "+rev);
 
 console.log("-----------------");
+// Armstrong number - Sum of cubing each didgit results in original number
+
+let arm=153,remain,total=0,origin=arm;
+
+while(arm>0)
+{
+    remain=arm%10;
+    arm=Math.floor(arm/10);
+    total=total+remain*remain*remain;
+}
+
+console.log("Calculated number is: "+total);
+
+if (total === origin)
+{
+    console.log("Number IS Armstrong");
+}
+else{
+    console.log("NOT Armstrong");
+}
+
 
 // let j=1;
 
